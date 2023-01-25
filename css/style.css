@@ -51,7 +51,7 @@ html {
 .mochila:before {
     height: 75px;
     width: 118px;
-    background-image: radial-gradient(circle closest-corner at 13px 29px , #4f2caf, #389de0 2px, transparent 2px, transparent), radial-gradient(circle closest-corner at 13px 29px , #fa15a2, #fa15a2 4px, transparent 4px, transparent), linear-gradient(to bottom, transparent 10px, transparent 15px, #fa15a2 5px,#fa15a2 18px, transparent 18px, transparent 100px), linear-gradient(to right, #fee92b 10px, #fee92b 10px, transparent 10px, transparent 16px,#fee92b 9px, #fee92b 50px), linear-gradient(to bottom, #fee92b 8px, #fee92b 16px, #fa15a2  8px, #fa15a2  30px, #af342c 20px, #af342c 72px, #af342c 10px, #af342c 57px, #af342c 5%);
+    background-image: radial-gradient(circle closest-corner at 13px 29px , #4f2caf, #389de0 2px, transparent 2px, transparent), radial-gradient(circle closest-corner at 13px 29px , #fa15a2, #fa15a2 4px, transparent 4px, transparent), linear-gradient(to bottom, transparent 10px, transparent 15px, #fa15a2 5px,#fa15a2 18px, transparent 18px, transparent 100px), linear-gradient(to right, #fee92b 10px, #fee92b 10px, transparent 10px, transparent 16px,#fee92b 9px, #fee92b 50px), linear-gradient(to bottom, #fee92b 8px, #fee92b 16px, #fa15a2  8px, #fa15a2  30px, #fa15a2  20px, #fa15a2  72px, #fa15a2  10px,  #fa15a2 57px, #fa15a2  5%);
     margin-left: 22px;
     margin-top: 58px;
     border: 4px solid #fee92b;
