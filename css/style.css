@@ -18,7 +18,7 @@ html {
     padding: 4em 2em 2em;
     box-sizing: border-box;
     display: flex;
-    background: #fa15a2;
+    background: #ec83c4;
     border-radius: 10px;
     gap: 2em;
 }
@@ -34,7 +34,7 @@ html {
     background-position: center 254px;
     background-size: 305px 6px;
     background-repeat: repeat-x; 
-    border: 5px solid #ebe818;
+    border: 5px solid #090901;
     border-radius: 85px 85px 44px 44px;
     display: inline-block;
     vertical-align: top;
@@ -56,7 +56,7 @@ html {
     margin-top: 58px;
     border: 4px solid #491033;
     border-radius: 11px;
-    box-shadow: 0 4px 0 0 #c1382e, inset 0px 4px 1px 0 #c03527;
+    box-shadow: 0 4px 0 0 #389de0, inset 0px 4px 1px 0 #795bff;
     content: '||';
     color: transparent;
     font-family: Comic Sans MS;
@@ -69,10 +69,10 @@ html {
 .mochila:after {
     margin-left: 67px;
     margin-top: -30px;
-    background: #cca16a;
+    background: #fee92b;
     width:26px;
     height:26px;
-    border: 3px solid #491033;
+    border: 3px solid #fa15a2;
     border-radius: 3px;
     transform: rotate(45deg);
 }
