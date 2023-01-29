@@ -9,29 +9,31 @@ enviarItem.addEventListener("submit",(evento)=>{
     evento.preventDefault()
 nomeItem = evento.target.elements["nome"];
 quantidadeItem= evento.target.elements["quantidade"];
+
+const itemAtual = {
+    "nome": nomeItem.value,
+    "quantidade" : quantidadeItem.value,
+}
+itens.push(itemAtual);
+localStorage.setItem("itens", JSON.stringify(itens));
+
+
     adicionaItens(nomeItem.value,quantidadeItem.value)
 nomeItem.value = "";
 quantidadeItem.value = "";
 })
 
-function adicionaItens(nome,quantidade){
+function adicionaItens(item){
 const linha = document.createElement('li');
 linha.classList.add("item");
 
 const numero= document.createElement('strong');
-numero.innerHTML = quantidade;
+numero.innerHTML = item.quantidade;
 linha.appendChild(numero);
-linha.innerHTML+=nome;
-console.log(linha);
+linha.innerHTML+= item.nome;
 const lista = document.getElementById("lista");
 lista.appendChild(linha);
-console.log(lista);
 
-const itemAtual = {
-    "nome": nome,
-    "quantidade" : quantidade,
-}
-itens.push(itemAtual);
-localStorage.setItem("itens", JSON.stringify(itens));
+
 }
 
