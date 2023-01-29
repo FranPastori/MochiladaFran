@@ -1,5 +1,10 @@
 const enviarItem = document.getElementById("novoitem");
-const itens = [];
+const itens = localStorage.getItem("itens")|| [];
+console.log(itens);
+itens.forEach( (elemento)=> {
+    console.log(elemento);
+})
+
 enviarItem.addEventListener("submit",(evento)=>{
     evento.preventDefault()
 nomeItem = evento.target.elements["nome"];
@@ -27,6 +32,6 @@ const itemAtual = {
     "quantidade" : quantidade,
 }
 itens.push(itemAtual);
-localStorage.setItem("item", JSON.stringify(itens));
+localStorage.setItem("itens", JSON.stringify(itens));
 }
 
