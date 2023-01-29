@@ -21,6 +21,11 @@ const lista = document.getElementById("lista");
 lista.appendChild(linha);
 console.log(lista);
 
-localStorage.setItem("nome",nome);
-localStorage.setItem("quantidade",quantidade);
+const itemAtual = {
+    "nome": nome,
+    "quantidade" : quantidade,
 }
+
+localStorage.setItem("item",stringfy(itemAtual));
+}
+
