@@ -26,6 +26,6 @@ const itemAtual = {
     "quantidade" : quantidade,
 }
 
-localStorage.setItem("item",JSON.stringfy(itemAtual));
+localStorage.setItem("item", JSON.stringify(itemAtual));
 }
 
