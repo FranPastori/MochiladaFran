@@ -1,10 +1,11 @@
 const enviarItem = document.getElementById("novoitem");
 enviarItem.addEventListener("submit",(evento)=>{
     evento.preventDefault()
-nomeItem = evento.target.elements["nome"].value;
-quantidadeItem= evento.target.elements["quantidade"].value;
-console.log(quantidadeItem);
-    adicionaItens(nomeItem,quantidadeItem)
+nomeItem = evento.target.elements["nome"];
+quantidadeItem= evento.target.elements["quantidade"];
+    adicionaItens(nomeItem.value,quantidadeItem.value)
+nomeItem.value = "";
+quantidadeItem.value = "";
 })
 
 function adicionaItens(nome,quantidade){
@@ -20,5 +21,6 @@ const lista = document.getElementById("lista");
 lista.appendChild(linha);
 console.log(lista);
 
-
+localStorage.setItem("nome",nome);
+localStorage.setItem("quantidade",quantidade);
 }
