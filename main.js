@@ -15,6 +15,7 @@ enviarItem.addEventListener("submit", (evento) => {
     }
     itens.push(itemAtual);
     localStorage.setItem("itens", JSON.stringify(itens));
+    adicionaItens(itemAtual);
 
     nomeItem.value = "";
     quantidadeItem.value = "";
