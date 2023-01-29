@@ -1,5 +1,5 @@
 const enviarItem = document.getElementById("novoitem");
-const itens = localStorage.getItem("itens")|| [];
+const itens =JSON.parse(localStorage.getItem("itens")) || [];
 console.log(itens);
 itens.forEach( (elemento)=> {
     console.log(elemento);
