@@ -2,7 +2,7 @@ const enviarItem = document.getElementById("novoitem");
 const itens = JSON.parse(localStorage.getItem("itens")) || [];
 const lista = document.getElementById("lista");
 itens.forEach((elemento) => {
-    console.log(elemento.nome, elemento.quantidade);
+    adicionaItens(itemAtual);
 })
 
 enviarItem.addEventListener("submit", (evento) => {
@@ -15,7 +15,6 @@ enviarItem.addEventListener("submit", (evento) => {
     }
     itens.push(itemAtual);
     localStorage.setItem("itens", JSON.stringify(itens));
-    adicionaItens(itemAtual);
 
     nomeItem.value = "";
     quantidadeItem.value = "";
