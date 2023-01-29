@@ -1,4 +1,5 @@
 const enviarItem = document.getElementById("novoitem");
+const itens = [];
 enviarItem.addEventListener("submit",(evento)=>{
     evento.preventDefault()
 nomeItem = evento.target.elements["nome"];
@@ -25,7 +26,7 @@ const itemAtual = {
     "nome": nome,
     "quantidade" : quantidade,
 }
-
-localStorage.setItem("item", JSON.stringify(itemAtual));
+itens.push(itemAtual);
+localStorage.setItem("item", JSON.stringify(itens));
 }
 
