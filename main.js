@@ -1,6 +1,8 @@
 const enviarItem = document.getElementById("novoitem");
 const itens = JSON.parse(localStorage.getItem("itens")) || [];
 const lista = document.getElementById("lista");
+const existe = itens.find(elemento => elemento.nome === nome.value);
+console.log(existe);
 itens.forEach((elemento) => {
     adicionaItens(elemento);
 })
